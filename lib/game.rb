@@ -35,6 +35,10 @@ class Game
     return false
   end
 
+  def draw?
+    won? && board.full? ? true : false
+  end
+
   def board
     @board
   end
