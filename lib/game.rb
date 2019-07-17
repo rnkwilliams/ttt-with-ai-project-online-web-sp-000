@@ -34,7 +34,7 @@ class Game
        @board[win_combination[2]]=="O"
        return win_combination
      end
-   end
+    end
   end
 
   def board
