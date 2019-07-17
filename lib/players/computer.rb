@@ -3,7 +3,6 @@ module Players::Computer
 
     
   end
-  
+
 
 end
-  
