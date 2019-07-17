@@ -29,7 +29,7 @@ class Game
     position_2 = board.cells[win_combo[1]]
     position_3 = board.cells[win_combo[2]]
 
-    return win_combination if ((position_1 == "X" && position_2 == "X" && position_3 == "X") ||
+    return win_combo if ((position_1 == "X" && position_2 == "X" && position_3 == "X") ||
                           (position_1 == "O" && position_2 == "O" && position_3 == "O"))
     }
     return false
