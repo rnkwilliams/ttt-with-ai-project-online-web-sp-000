@@ -24,17 +24,14 @@ class Game
   end
 
   def won?
-    WIN_COMBINATIONS.any? do |win_combination|
-     if @board[win_combination[0]]=="X"&&
-       @board[win_combination[1]]=="X"&&
-       @board[win_combination[2]]=="X"
-       return win_combination
-     elsif @board[win_combination[0]]=="O"&&
-       @board[win_combination[1]]=="O" &&
-       @board[win_combination[2]]=="O"
-       return win_combination
-     end
-    end
+    position_1 = board.cells[win_combo[0]]
+      position_2 = board.cells[win_combo[1]]
+      position_3 = board.cells[win_combo[2]]
+
+      return win_combo if ((position_1 == "X" && position_2 == "X" && position_3 == "X") ||
+                          (position_1 == "O" && position_2 == "O" && position_3 == "O"))
+    }
+    return false
   end
 
   def board
