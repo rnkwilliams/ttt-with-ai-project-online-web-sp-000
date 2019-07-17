@@ -40,7 +40,7 @@ class Game
   end
 
   def over?
-    draw? ? true : false
+    draw? || won? ? true : false
   end
 
   def board
