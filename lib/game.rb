@@ -19,6 +19,18 @@ class Game
     @board = board
   end
 
+  def board
+    @board
+  end
+
+  def player_1
+    @player_1
+  end
+
+  def player_2
+    @player_2
+  end
+
   def current_player
     board.turn_count.even? ? @player_1 : @player_2
   end
@@ -79,15 +91,5 @@ class Game
     board.display
   end
 
-  def board
-    @board
-  end
-
-  def player_1
-    @player_1
-  end
-
-  def player_2
-    @player_2
-  end
+  
 end
