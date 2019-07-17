@@ -1,4 +1,4 @@
-module Players::Computer
+module Players
   class Computer < Players
     def move(board)
       "1"
