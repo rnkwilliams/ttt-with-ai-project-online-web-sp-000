@@ -43,6 +43,11 @@ class Game
     draw? || won? ? true : false
   end
 
+  def winner
+    if won = won?
+      board.cells[won.first]
+  end
+
   def board
     @board
   end
